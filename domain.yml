@@ -1,0 +1,21 @@
+version: "3.1"
+
+intents:
+  - solicitar_preco
+
+entities:
+  - produto
+  - filial
+
+slots:
+  produto:
+    type: text
+  filial:
+    type: text
+
+responses:
+  utter_agradecimento:
+    - text: "Obrigada pela sua solicitação! Vamos verificar o preço."
+
+actions:
+  - action_buscar_preco
